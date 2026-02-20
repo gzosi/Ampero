@@ -13,6 +13,6 @@ class Drivers:
         # Phase3 = Phase3
         # Phase4 = Phase4
     class General:
-        Activation = False
+        Activation = True
         Version = 0
         Debug = False
