@@ -1,0 +1,6 @@
+# Source Files
+*.jpg
+*.pth
+
+# Developing Files
+*.ipynb
