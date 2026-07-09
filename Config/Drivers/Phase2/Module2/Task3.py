@@ -5,7 +5,7 @@ class Task3:
         MeshExt = 'Mesh.ply'
     class Settings:
         class Calib:
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Pair = ('Camera1', 'Camera2')
             Model = 'Model27'
         Bounds = [(0, 255)]
@@ -21,7 +21,9 @@ class Task3:
         class GlobalFilter:
             class Positional:
                 enabled = True
-                exclusion_zones = [ ]
+                exclusion_zones = [
+                    [[-100, -1000, 740], [-15, 1000, 1000]]
+                ]
             class Size:
                 voxelSize = 2.0          
             class Stats:

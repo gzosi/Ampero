@@ -11,23 +11,23 @@ class Task1:
             Camera2 = None
         class Resync:
             class Database2:
-                Dataset1 = 67
+                Dataset1 = 1
             class Database3: 
-                class Dataset4:
-                    Background = 16
-                    Foreground = 22
+                class Dataset1:
+                    Background = 21
+                    Foreground = 8 #to 48
             class Database4:
-                Dataset1 = 16
-                Dataset2 = 32
-                Dataset3 = 36
-                Dataset4 = 31
-                Dataset5 = 1
-                Dataset6 = 36
-                Dataset7 = 4
-                Dataset8 = 37
-                Dataset9 = 56
-                Dataset10 = 15
-                Dataset11 = 0
+                Dataset1 = 81
+                Dataset2 = 168
+                Dataset3 = 182
+                Dataset4 = 110
+                Dataset5 = 239
+                Dataset6 = 145
+                Dataset7 = 241
+                Dataset8 = 117
+                Dataset9 = 78
+                Dataset10 = 42
+                Dataset11 = 214
     class General:
         Activation = True
         Maker = True

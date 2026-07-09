@@ -3,7 +3,7 @@ class Task2:
         OutputExt = 'Data.pkl'
     class Settings:
         class Calib:
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Pair = ('Camera1', 'Camera2')
             Model = 'Model27'
         Scroll = 20
