@@ -5,32 +5,36 @@ class Task3:
         MeshExt = 'Mesh.ply'
     class Settings:
         class Calib:
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Pair = ('Camera1', 'Camera2')
             Model = 'Model27'
-        Bounds = [(0, 255)]
+        Bounds = [[5, 20]] #[64, 94]
         class LocalFilter:
             class Size:
                 voxelSize = 0.5
             class Radius:
-                nbPoints = 50
-                radius = 1.5
+                nbPoints = 25
+                radius = 5.0
             class Stats:
                 nbNeighbors = 100
-                stdRatio = 0.25 
+                stdRatio = 1.5 
         class GlobalFilter:
             class Positional:
                 enabled = True
-                exclusion_zones = [ ]
+                exclusion_zones = [ 
+                    [[-100, -100 , -1000], [-15, -5, 1000]],
+                    [[50, -1000, - 1000],[100, 1000, 1000]],
+                    [[-100, -12, 465], [0, -7.0, 1000]]
+                ]
             class Size:
-                voxelSize = 2.0          
+                voxelSize = 2.0       
             class Stats:
                 enabled = True
                 nbNeighbors = 30
-                stdRatio = 1.0
+                stdRatio = 1.5 
             class Radius:
                 enabled = True
-                nbPoints = 15           
+                nbPoints = 10           
                 radius = 5.0
             class PCA:
                 enabled = True 
@@ -49,7 +53,7 @@ class Task3:
                 linear_fit = True    
                 density_trim = 0.001  #
             class Cleaning:
-                max_distance_from_source = 3.0
+                max_distance_from_source = 4.5
             class Smoothing:
                 class Regularization:
                     enabled = True
