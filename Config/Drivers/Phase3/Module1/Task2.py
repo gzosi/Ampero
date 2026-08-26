@@ -5,14 +5,14 @@ class Task2:
     class Settings:
         class Src:
             Database = 'Database3'
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Foreground = 'Foreground'
         class Ref:
             Database = 'Database1'
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Record = 'Record1'
         class Calib:
-            Dataset = 'Dataset4'
+            Dataset = 'Dataset1'
             Pair = ('Camera1', 'Camera2')
             Model = 'Model27'
         EpiLimit = 100000
