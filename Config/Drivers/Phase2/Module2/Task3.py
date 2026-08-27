@@ -51,7 +51,7 @@ class Task3:
                 linear_fit = True    
                 density_trim = 0.001  #
             class Cleaning:
-                max_distance_from_source = 3.0
+                max_distance_from_source = 3.25
             class Smoothing:
                 class Regularization:
                     enabled = True
