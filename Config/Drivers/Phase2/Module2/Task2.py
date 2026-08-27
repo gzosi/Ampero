@@ -21,7 +21,7 @@ class Task2:
                 nbNeighbors = 100
                 stdRatio = 0.25
     class General:
-        Activation = True
+        Activation = False
         Maker = True
         Destroyer = False
         Version = 0

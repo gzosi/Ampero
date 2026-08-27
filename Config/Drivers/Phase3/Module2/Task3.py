@@ -1,5 +1,5 @@
 #%% Defining Config Packet
-class Task1:
+class Task3:
     class MetaData:
         OutputExt = 'Data.pkl'
     class Settings:
@@ -7,11 +7,14 @@ class Task1:
             Dataset = 'Dataset1'
             Pair = ('Camera1', 'Camera2')
             Model = 'Model27'
-        class ICP:
-            Activation = True
-            Threshold = 10.0 
+        MaxDist = 20
+        class Analysis:
+            dt = 0.00015625 
+            class POD:
+                n_modes = 25
+                eig_th = 1e-10 
     class General:
-        Activation = False
+        Activation = True
         Maker = True
         Destroyer = False
         Version = 0

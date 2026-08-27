@@ -38,18 +38,18 @@ class Task3:
                 radius = 5.0
             class PCA:
                 enabled = True 
-                search_radius = 100      
-                max_nn = 500
-                threshold = 0.2    
+                search_radius = 50      
+                max_nn = 250
+                threshold = 0.15    
         class Mesh:
             class NormalOrient:
                 radius = 50           
                 max_nn = 500       
                 cameraLoc = [0.0, 0.0, 0.0]
             class Poisson:
-                depth = 12            
+                depth = 15            
                 width = 0.0
-                scale = 1.1          
+                scale = 1.0          
                 linear_fit = True    
                 density_trim = 0.001  #
             class Cleaning:
@@ -57,7 +57,7 @@ class Task3:
             class Smoothing:
                 class Regularization:
                     enabled = True
-                    target_triangles = 15000
+                    target_triangles = 25000
                 class Subdivision:
                     enabled = True
                     method = 'midpoint'       
@@ -71,4 +71,4 @@ class Task3:
         Activation = True
         Maker = True
         Destroyer = False
-        Version = 2
+        Version = 0
