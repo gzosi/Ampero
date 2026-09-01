@@ -18,7 +18,7 @@ class Task2:
             SavgolWindow = 15  # Finestra mobile per la regolarizzazione (dispari)
             SavgolPoly = 2     # Grado del polinomio interpolante locale
     class General:
-        Activation = False
+        Activation = True
         Maker = True
         Destroyer = False
         Version = 0

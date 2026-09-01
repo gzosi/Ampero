@@ -24,10 +24,11 @@ class Task3:
                 exclusion_zones = [ 
                     [[-100, -100 , -1000], [-15, -5, 1000]],
                     [[50, -1000, - 1000],[100, 1000, 1000]],
-                    [[-100, -12, 465], [0, -7.0, 1000]]
+                    [[-100, -12, 465], [0.5, -5.5, 1000]],
+                    [[-1000, -1000, -1000], [1000, 1000, 420]]
                 ]
             class Size:
-                voxelSize = 2.0       
+                voxelSize = 1.75       
             class Stats:
                 enabled = True
                 nbNeighbors = 30
@@ -38,16 +39,16 @@ class Task3:
                 radius = 5.0
             class PCA:
                 enabled = True 
-                search_radius = 50      
-                max_nn = 250
-                threshold = 0.15    
+                search_radius = 50     
+                max_nn = 500
+                threshold = 0.20    
         class Mesh:
             class NormalOrient:
                 radius = 50           
                 max_nn = 500       
                 cameraLoc = [0.0, 0.0, 0.0]
             class Poisson:
-                depth = 15            
+                depth = 12            
                 width = 0.0
                 scale = 1.0          
                 linear_fit = True    
@@ -57,7 +58,7 @@ class Task3:
             class Smoothing:
                 class Regularization:
                     enabled = True
-                    target_triangles = 25000
+                    target_triangles = 20000
                 class Subdivision:
                     enabled = True
                     method = 'midpoint'       

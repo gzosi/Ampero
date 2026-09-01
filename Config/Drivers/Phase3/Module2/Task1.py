@@ -33,7 +33,7 @@ class Task1:
                 maxLateralDist = 0.5
                 rayClosingIters = 5 
     class General:
-        Activation = False
+        Activation = True
         Maker = True
         Destroyer = False
         Version = 0
