@@ -10,7 +10,7 @@ class Task1:
             Database = 'Database3'
             Dataset = 'Dataset1'
             Location = 'Background'
-        Bounds = [[15, 20, 25]] 
+        Bounds = [[15, 25]] 
         class DynamicROI:
             Camera1 = {
                 15 : np.array([
